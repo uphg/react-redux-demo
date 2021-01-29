@@ -28,6 +28,39 @@
   color: #61dafb;
 }
 
+.message {
+  font-size: 360px;
+  color: #61dafb;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 66px;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1890ff;
+  border: 1px solid #1890ff;
+  padding: 6px 10px;
+  transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+button:focus {
+  outline: none;
+}
+button:hover,
+button:focus {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+button:active {
+  background: #096dd9;
+  border-color: #096dd9;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
