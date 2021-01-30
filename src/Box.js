@@ -23,21 +23,19 @@ class Box extends Component {
   }
 }
 
-// getPartialStore 「获取数据」获取部分 store 映射到当前组件的 this.props中
-function getPartialStore(state) {
+// mapStateToProps 获取部分 store 映射到当前组件的 this.props中
+function mapStateToProps(state) {
   return {
     number: state.number
   }
 }
 
-// actionCreator 「发送事件」表示你的 action 通过一个函数返回的对象获取
-const actionCreator = {
-  add: () => {
-    return { type: 'add', payload: 1 }
-  },
-  back: () => {
-    return { type: 'back', payload: 1 }
+// mapDispatchToProps 像 dispatch 触发事件并传值
+function mapDispatchToProps(dispatch) {
+  return {
+    add: () => dispatch({ type: 'add', payload: 1 }),
+    back: () => dispatch({ type: 'back', payload: 1 })
   }
 }
 
-export default connect(getPartialStore, actionCreator)(Box);
+export default connect(mapStateToProps, mapDispatchToProps)(Box);
