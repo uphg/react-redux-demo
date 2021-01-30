@@ -13,32 +13,11 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-.message {
-  font-size: 360px;
-  color: #61dafb;
-  line-height: 1;
-  margin: 0;
-  margin-bottom: 66px;
-}
 
-.margin-right-10 {
-  margin-right: 10px;
-}
 
 button {
   cursor: pointer;
