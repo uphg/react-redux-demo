@@ -7,7 +7,7 @@ class Box extends Component {
     return (
       <div className="Box">
         <p className="message">
-          {this.props.number}
+          {this.props.message}
         </p>
         <div>
           <button
@@ -23,14 +23,14 @@ class Box extends Component {
   }
 }
 
-// mapStateToProps 获取部分 store 映射到当前组件的 this.props中
+// mapStateToProps 获取需要的 store 映射到当前组件的 this.props中
 function mapStateToProps(state) {
   return {
-    number: state.number
+    message: state.number
   }
 }
 
-// mapDispatchToProps 像 dispatch 触发事件并传值
+// mapDispatchToProps 传入多个 dispatch。
 function mapDispatchToProps(dispatch) {
   return {
     add: () => dispatch({ type: 'add', payload: 1 }),
